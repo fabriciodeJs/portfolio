@@ -17,8 +17,8 @@
     color: var(--color-primary);
 }
 
-header{
-    background-color: transparent;
+
+#container-cabecalho{
     width: 100%;
     height: 90px;
     position: relative;
@@ -30,8 +30,11 @@ header{
     box-shadow: 0px 0px 10px rgba(54, 191, 177, 0.428);
 }
 
-header #logo {
+#logo{
     display: flex;
+}
+
+.logo {
     align-items: center;
     justify-content: center;
     height: 50px;
@@ -45,24 +48,28 @@ header #logo {
     font-weight: bolder;
 }
 
-header #logo span {
+#container-cabecalho #logo span {
     padding: 0 10px;
     font-size: 1.6em;
 }
 
-header nav ul {
-    display: flex;
-    list-style: none;
+#botao-menu-mobile {
+    display: none;
 }
 
-header nav ul li {
+#container-cabecalho nav ul {
+    display: flex;
+   list-style: none;
+}
+
+#container-cabecalho nav ul li {
     position: relative;
     cursor: pointer;
-    padding: 0 30px;
+    margin-left: 30px;
     font-size: 1.3em;
 }
 
-header nav ul li::after {
+#container-cabecalho nav ul li::after {
     content: '';
     position: absolute;
     left: 0;
@@ -76,11 +83,13 @@ header nav ul li::after {
     transition: transform .5s;
 }
 
-header nav ul li:hover::after {
+#container-cabecalho nav ul li:hover::after {
     background-color: var(--color-segund);
     transform-origin: left;
     transform: scaleX(1);
 }
+
+/* --------------------------------------------------- */
 
 main {
     width: 100vw;
@@ -97,6 +106,7 @@ main #container-apresentacao {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
+    
 }
 
 main #container-apresentacao #container-conteudo{
@@ -104,22 +114,26 @@ main #container-apresentacao #container-conteudo{
     align-items: center;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
 }
 
 main #container-apresentacao #container-conteudo #conteudo{
-    width: 80%;
-    height: 250px;
     display: block;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.825);
     border-radius: 10px;
+    height: 50vh;
     padding: 28px;
 }
 
+#logo-mobile {
+    display: none;
+}
+
 #container-conteudo #conteudo .conteudo{
-    padding: 20px 0;
+    padding: 30px 0;
     color: var(--color-primary);
     
 }
@@ -136,11 +150,11 @@ main #container-apresentacao #container-conteudo #conteudo{
     display: inline-block;
     font-size: 1.1em;
     text-decoration: none;
-    border: 1px solid var(--color-third);
     border-radius: 20px;
     margin: 0 20px;
     cursor: pointer;
     width: 120px;
+
 }
 
 #conteudo a:hover{
