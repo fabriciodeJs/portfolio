@@ -94,7 +94,7 @@
 
     #sobre{
         flex-direction: column;
-        
+        padding: 0;
     }
 
     .container-sobre {

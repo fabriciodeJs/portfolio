@@ -106,17 +106,6 @@ main {
     height: 75vh;
 }
 
-@keyframes animacao{
-
-    from{
-        transform: translate(0) scale(0);
-    }
-
-    to{
-        transform: translate(1) scale(1);
-    }
-}
-
 main #container-apresentacao {
     display: flex;
     align-items: center;
@@ -126,10 +115,7 @@ main #container-apresentacao {
     background-image: url(../img/Background1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center;
-    animation-name: animacao;
-    transition: 3s;
-    
+    background-position: bottom center; 
 }
 
 main #container-apresentacao #container-conteudo{
@@ -234,19 +220,24 @@ main #container-apresentacao #container-conteudo #img img{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px;
+}
+
+#sobre-dados{
+    width: 60%;
 }
 
 .container-sobre {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
     margin-top: 40px;
 }
 
 .container-sobre img{
-    max-width: 50%;
+    max-width: 60%;
     width: auto;
+    padding-bottom: 10px;
 
 }
 
@@ -272,3 +263,116 @@ main #container-apresentacao #container-conteudo #img img{
     text-align: justify;
     line-height: 24px;
 }
+/********************************************/
+
+#tecnologias {
+    background-color: var(--color-background);
+    
+}
+
+#titulo-tecnologia{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    padding: 70px 0;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 100px;
+    padding: 30px 0;
+}
+
+.cards-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 100px;
+    padding: 30px 0;
+}
+
+.container-conteudo-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao-tecnologia{
+    padding: 25px 0;
+    font-size: 1.6em;
+}
+
+#html {
+    color: #F06124;
+}
+
+#css {
+    color: #016BC1;
+}
+#javascript {
+    color: #F7DF1E;
+}
+#php {
+    color: #787CB4;
+}
+#java {
+    color: #E92E30;
+}
+#sql {
+    color: #7FBA00;
+}
+#mysql {
+    color: #E48E00;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 9em;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  } 
