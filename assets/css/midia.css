@@ -17,15 +17,25 @@
     #mobile {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
         align-items: end;
         width: 100vw;
         background-color: black;
     }
 
+    #logo-cabecalho {
+        display: block;
+        border: none;
+        padding: 0 10px;
+    }
+
     #btn {
         padding: 10px 10px 10px 0;
         font-size: 1.2em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     #mobile #botao-menu-mobile {
@@ -38,10 +48,11 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        background-color: var(--color-segund);
+        background-color: var(--color-segund);   
     }
 
     ul li {
+        
         list-style: none;
         padding: 10px 0;
         text-align: center;
@@ -65,12 +76,6 @@
 
     span {
         padding: 0 8px;
-    }
-
-    #conteudo a {
-        display: flex;
-        margin: auto;
-        text-indent: 12px;
     }
 
     h2 {

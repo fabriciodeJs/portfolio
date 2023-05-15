@@ -17,6 +17,14 @@
     color: var(--color-primary);
 }
 
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    
+}
 
 #container-cabecalho{
     width: 100%;
@@ -26,6 +34,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-background);
+    backdrop-filter: blur(10px);
     padding: 0 120px;
     box-shadow: 0px 0px 10px rgba(54, 191, 177, 0.428);
 }
@@ -59,7 +68,7 @@
 
 #container-cabecalho nav ul {
     display: flex;
-   list-style: none;
+    list-style: none;
 }
 
 #container-cabecalho nav ul li {
@@ -92,6 +101,7 @@
 /* --------------------------------------------------- */
 
 main {
+    margin-top: 90px;
     width: 100vw;
     height: 80vh;
 }
@@ -102,16 +112,17 @@ main #container-apresentacao {
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-image: url(../img/16406299_rm373batch2-08.jpg);
+    background-image: url(../img/Background1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
+    transform: translate(0) scale(1);
+    transition: 3s;
     
 }
 
 main #container-apresentacao #container-conteudo{
     display: flex;
-    align-items: center;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -126,6 +137,10 @@ main #container-apresentacao #container-conteudo #conteudo{
     border-radius: 10px;
     height: 50vh;
     padding: 28px;
+}
+
+#logo-cabecalho {
+    display: none;
 }
 
 #logo-mobile {
@@ -146,18 +161,35 @@ main #container-apresentacao #container-conteudo #conteudo{
     font-size: 1.3em;
 }
 
-#conteudo a{
-    display: inline-block;
-    font-size: 1.1em;
-    text-decoration: none;
+#container-a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
     border-radius: 20px;
-    margin: 0 20px;
+    margin: 30px 10px;
+    background-color: rgba(3, 140, 115, 0.273);
+    
+}
+
+#conteudo a{
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px black;
+    text-decoration: none;
     cursor: pointer;
-    width: 120px;
 
 }
 
-#conteudo a:hover{
+#conteudo .container-a:hover{
     background-color: var(--color-third);
 }
 /*main #container-apresentacao #container-conteudo #img{
@@ -170,3 +202,7 @@ main #container-apresentacao #container-conteudo #img img{
     width: auto;
     height: auto;
 }*/
+
+.container-sobre{
+    height: 50vh;
+}
