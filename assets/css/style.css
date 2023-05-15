@@ -98,12 +98,23 @@ header {
     transform: scaleX(1);
 }
 
-/* --------------------------------------------------- */
+/***************************************************/
 
 main {
     margin-top: 90px;
     width: 100vw;
-    height: 80vh;
+    height: 75vh;
+}
+
+@keyframes animacao{
+
+    from{
+        transform: translate(0) scale(0);
+    }
+
+    to{
+        transform: translate(1) scale(1);
+    }
 }
 
 main #container-apresentacao {
@@ -116,7 +127,7 @@ main #container-apresentacao {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    transform: translate(0) scale(1);
+    animation-name: animacao;
     transition: 3s;
     
 }
@@ -148,7 +159,7 @@ main #container-apresentacao #container-conteudo #conteudo{
 }
 
 #container-conteudo #conteudo .conteudo{
-    padding: 30px 0;
+    padding: 25px 0;
     color: var(--color-primary);
     
 }
@@ -159,6 +170,18 @@ main #container-apresentacao #container-conteudo #conteudo{
 
 #container-conteudo #conteudo p{
     font-size: 1.3em;
+}
+
+#redes-socias {
+    width: 100%;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+}
+
+#redes-socias i{
+    margin: 0 25px;
+    cursor: pointer;
 }
 
 #container-a{
@@ -203,6 +226,49 @@ main #container-apresentacao #container-conteudo #img img{
     height: auto;
 }*/
 
-.container-sobre{
-    height: 50vh;
+/***************************************************/
+
+#sobre {
+    width: 100%;
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.container-sobre img{
+    max-width: 50%;
+    width: auto;
+
+}
+
+#sobre-mim {
+    width: 80%;
+    padding: 50px 20px;
+    background-color: var(--color-third);
+    border-radius: 20px;
+    text-shadow: 0 0 10px black;
+    color: white;
+}
+
+#sobre-mim h2{
+    padding: 0 50px 20px 50px;
+    text-align: center;
+    font-size: 3em;
+}
+
+#sobre-mim p{
+    text-indent: 20px;
+    padding: 20px 0;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 24px;
 }
