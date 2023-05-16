@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -19,14 +18,14 @@
 
 header {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
-    
+
 }
 
-#container-cabecalho{
+#container-cabecalho {
     width: 100%;
     height: 90px;
     position: relative;
@@ -39,7 +38,7 @@ header {
     box-shadow: 0px 0px 10px rgba(54, 191, 177, 0.428);
 }
 
-#logo{
+#logo {
     display: flex;
 }
 
@@ -115,10 +114,10 @@ main #container-apresentacao {
     background-image: url(../img/Background1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center; 
+    background-position: bottom center;
 }
 
-main #container-apresentacao #container-conteudo{
+main #container-apresentacao #container-conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +126,7 @@ main #container-apresentacao #container-conteudo{
     backdrop-filter: blur(4px);
 }
 
-main #container-apresentacao #container-conteudo #conteudo{
+main #container-apresentacao #container-conteudo #conteudo {
     display: block;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.825);
@@ -144,17 +143,18 @@ main #container-apresentacao #container-conteudo #conteudo{
     display: none;
 }
 
-#container-conteudo #conteudo .conteudo{
+#container-conteudo #conteudo .conteudo {
     padding: 25px 0;
     color: var(--color-primary);
-    
+    text-shadow: 0 0 10px black;
+
 }
 
-#container-conteudo #conteudo h2{
+#container-conteudo #conteudo h2 {
     font-size: 2em;
 }
 
-#container-conteudo #conteudo p{
+#container-conteudo #conteudo p {
     font-size: 1.3em;
 }
 
@@ -165,12 +165,12 @@ main #container-apresentacao #container-conteudo #conteudo{
     justify-content: center;
 }
 
-#redes-socias i{
+#redes-socias i {
     margin: 0 25px;
     cursor: pointer;
 }
 
-#container-a{
+#container-a {
     width: 100%;
     display: flex;
     align-items: center;
@@ -186,10 +186,10 @@ main #container-apresentacao #container-conteudo #conteudo{
     border-radius: 20px;
     margin: 30px 10px;
     background-color: rgba(3, 140, 115, 0.273);
-    
+
 }
 
-#conteudo a{
+a {
     font-size: 1.1em;
     font-weight: bolder;
     text-shadow: 2px 2px 10px black;
@@ -198,9 +198,10 @@ main #container-apresentacao #container-conteudo #conteudo{
 
 }
 
-#conteudo .container-a:hover{
+#conteudo .container-a:hover {
     background-color: var(--color-third);
 }
+
 /*main #container-apresentacao #container-conteudo #img{
     width: 100%;
 }
@@ -223,7 +224,7 @@ main #container-apresentacao #container-conteudo #img img{
     padding: 50px;
 }
 
-#sobre-dados{
+#sobre-dados {
     width: 60%;
 }
 
@@ -234,15 +235,15 @@ main #container-apresentacao #container-conteudo #img img{
     margin-top: 40px;
 }
 
-.container-sobre img{
-    max-width: 60%;
+.container-sobre img {
+    max-width: 80%;
     width: auto;
     padding-bottom: 10px;
 
 }
 
 #sobre-mim {
-    width: 80%;
+
     padding: 50px 20px;
     background-color: var(--color-third);
     border-radius: 20px;
@@ -250,34 +251,35 @@ main #container-apresentacao #container-conteudo #img img{
     color: white;
 }
 
-#sobre-mim h2{
+#sobre-mim h2 {
     padding: 0 50px 20px 50px;
     text-align: center;
     font-size: 3em;
 }
 
-#sobre-mim p{
+#sobre-mim p {
     text-indent: 20px;
     padding: 20px 0;
     font-size: 1.2em;
     text-align: justify;
     line-height: 24px;
 }
+
 /********************************************/
 
 #tecnologias {
     background-color: var(--color-background);
-    
+
 }
 
-#titulo-tecnologia{
+#titulo-tecnologia {
     width: 100%;
     text-align: center;
     font-size: 3em;
     padding: 70px 0;
 }
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
@@ -295,14 +297,14 @@ main #container-apresentacao #container-conteudo #img img{
     padding: 30px 0;
 }
 
-.container-conteudo-card{
+.container-conteudo-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.descricao-tecnologia{
+.descricao-tecnologia {
     padding: 25px 0;
     font-size: 1.6em;
 }
@@ -314,18 +316,23 @@ main #container-apresentacao #container-conteudo #img img{
 #css {
     color: #016BC1;
 }
+
 #javascript {
     color: #F7DF1E;
 }
+
 #php {
     color: #787CB4;
 }
+
 #java {
     color: #E92E30;
 }
+
 #sql {
     color: #7FBA00;
 }
+
 #mysql {
     color: #E48E00;
 }
@@ -333,46 +340,156 @@ main #container-apresentacao #container-conteudo #img img{
 .card {
     width: 190px;
     height: 254px;
-    background: #07182E;
+    background-color: #07182E;
     position: relative;
     display: flex;
     place-content: center;
     place-items: center;
     overflow: hidden;
     border-radius: 20px;
-  }
-  
-  .card h2 {
+
+}
+
+.card h2 {
     z-index: 1;
     color: white;
     font-size: 9em;
-  }
-  
-  .card::before {
+}
+
+.card::before {
     content: '';
     position: absolute;
     width: 100px;
-    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    background-image: linear-gradient(180deg, var(--color-primary), var(--color-third));
     height: 130%;
     animation: rotBGimg 3s linear infinite;
     transition: all 0.2s linear;
-  }
-  
-  @keyframes rotBGimg {
+}
+
+@keyframes rotBGimg {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  
+
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  .card::after {
+}
+
+.card::after {
     content: '';
     position: absolute;
     background: #07182E;
-    ;
     inset: 5px;
     border-radius: 15px;
-  } 
+}
+
+/*************************************/
+
+#projetos {
+
+    width: 100%;
+    background-color: var(--color-background);
+}
+
+#titulo-iframe {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 3em;
+}
+
+.container-projetos {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container-iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-iframe h3 {
+    font-size: 1.8em;
+    padding: 40px 0;
+}
+
+.container-iframe .container-p {
+    width: 500px;
+}
+
+.container-iframe p {
+    font-size: 1.1em;
+    padding: 40px 0;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+iframe {
+    height: 550px;
+    width: 500px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    text-decoration: none;
+    ;
+
+}
+
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+button:hover {
+    color: #e8e8e8;
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    font-size: 3em;
+    background: #ffab62;
+    width: 100%;
+    height: 100px;
+    
+}
