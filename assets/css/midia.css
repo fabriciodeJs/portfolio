@@ -64,16 +64,16 @@
     /* ------------------------------- */
     main {
         margin: 0;
+        padding: 0;
     }
+
+   
+
     #container-apresentacao {
         margin: 0;
         width: 100%;
         background-position: right bottom;
 
-    }
-
-    #container-conteudo #conteudo {
-        width: 95%;
     }
 
     span {
@@ -138,5 +138,48 @@
 
     /*********************/
 
-    
+    .container-iframe {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #titulo-iframe {
+        font-size: 2em;
+    }
+
+    .container-projetos {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .container-iframe h3 {
+        font-size: 1.5em;
+        
+    }
+
+    .container-iframe .container-p {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+
+    .container-iframe p {
+        font-size: 1em;
+        padding: 20px 0;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    #ultimo-botao{
+        padding-bottom: 30px;
+    }
+
+    footer p {
+        font-size: 1em;
+        
+    }
 }
