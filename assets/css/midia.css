@@ -122,18 +122,30 @@
 
     /********************************************************/
 
+    #tecnologias {
+        width: 100%;
+    }
+
     #titulo-tecnologia{
         font-size: 2em;
     }
 
     .cards, .cards-2 {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 80px 80px;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     .card {
-        width: 150px;
-        height: 204px;
+        width: 100px;
+        height: 120px;
+        font-size: .5em;
+        padding: 0 10px;
+    }
+
+    .descricao-tecnologia {
+        font-size: 1.1em;
     }
 
     /*********************/
@@ -152,6 +164,11 @@
         display: flex;
         flex-direction: column;
         
+    }
+
+    .tecnologias-usadas {
+        width: 100%;
+        padding: 0 20px;
     }
 
     .container-iframe h3 {
