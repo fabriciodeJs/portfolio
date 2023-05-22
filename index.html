@@ -12,33 +12,49 @@
     <title>Fabricio de Jesus</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <div id="container-cabecalho">
             <div class="logo" id="logo">
                 <span class="material-symbols-outlined">code</span>
-                <p>FabricioWebDev</p>
+                <p><a href="#container-apresentacao">FabricioWebDev</a></p>
             </div>
             <nav>
                 <ul>
-                    <li>Sobre</li>
-                    <li>Tecnologias</li>
-                    <li>Projetos</li>
-                    <li>Contate-me</li>
+                    <a href="#sobre">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#tec">
+                        <li>Tecnologias</li>
+                    </a>
+                    <a href="#titulo-iframe">
+                        <li>Projetos</li>
+                    </a>
+                    <a href="#footer">
+                        <li>Contate-me</li>
+                    </a>
                 </ul>
             </nav>
         </div>
         <menu id="mobile">
             <div id="btn">
-                <span id="logo-cabecalho" class="material-symbols-outlined">code</span>
+                <a href="#container-apresentacao"><span id="logo-cabecalho" class="material-symbols-outlined" >code</span></a>
                 <span id="botao-menu-mobile" class="material-symbols-outlined">menu</span>
             </div>
             <nav id="showMenu" style="display: none;">
                 <ul>
-                    <li>Sobre</li>
-                    <li>Tecnologias</li>
-                    <li>Projetos</li>
-                    <li> Contate-me</li>
+                    <a href="#sobre">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#tec">
+                        <li>Tecnologias</li>
+                    </a>
+                    <a href="#titulo-iframe">
+                        <li>Projetos</li>
+                    </a>
+                    <a href="#footer">
+                        <li>Contate-me</li>
+                    </a>
                 </ul>
             </nav>
         </menu>
@@ -46,9 +62,6 @@
     <main>
         <section id="container-apresentacao">
             <div id="container-conteudo">
-                <!--<div id="img">
-                    <img src="assets/img/foto-fabricio-removebg-preview.png" alt="Foto-Perfil">
-                </div>-->
                 <div id="conteudo">
                     <div class="logo" id="logo-mobile">
                         <span class="material-symbols-outlined">code</span>
@@ -74,7 +87,7 @@
                     </div>
                     <div id="container-a">
                         <div class="container-a">
-                            <a class="conteudo" href="">Meus Projetos</a>
+                            <a class="conteudo" href="#" download="CurriculoFabricio">Curriculo CV</a>
                         </div>
                     </div>
                 </div>
@@ -82,10 +95,10 @@
         </section>
         <section id="sobre">
             <div class="container-sobre">
-                <img src="assets/img/foto-fabricio-removebg-preview.png" alt="foto-fabricio">
+                <img data-anime="left" src="assets/img/foto-fabricio-removebg-preview.png" alt="foto-fabricio">
             </div>
             <div id="sobre-dados" class="container-sobre">
-                <article id="sobre-mim">
+                <article data-anime="up" id="sobre-mim">
                     <h2>Sobre Mim</h2>
                     <div>
                         <p>
@@ -108,75 +121,76 @@
         </section>
         <section id="tecnologias">
             <div id="titulo-tecnologia">
-                <h1>Tecnologias</h1>
+                <h1 data-anime="up" id="tec">Tecnologias</h1>
             </div>
-            <div class="cards">
-                <div class="container-conteudo-card">
-                    <div class="card">
-                        <h2>
-                            <i id="html" class="fa-brands fa-html5"></i>
-                        </h2>
+            <div data-anime="up">
+                <div class="cards">
+                    <div class="container-conteudo-card">
+                        <div class="card">
+                            <h2>
+                                <i id="html" class="fa-brands fa-html5"></i>
+                            </h2>
+                        </div>
+                        <p class="descricao-tecnologia">HTML 5</p>
                     </div>
-                    <p class="descricao-tecnologia">HTML 5</p>
+                    <div class="container-conteudo-card">
+                        <div class="card">
+                            <h2>
+                                <i id="css" class="fa-brands fa-css3-alt"></i>
+                            </h2>
+                        </div>
+                        <p class="descricao-tecnologia">CSS</p>
+                    </div>
+                    <div class="container-conteudo-card">
+                        <div class="card">
+                            <h2>
+                                <i id="javascript" class="fa-brands fa-square-js"></i>
+                            </h2>
+                        </div>
+                        <p class="descricao-tecnologia">JAVASCRIPT</p>
+                    </div>
+                    <div class="container-conteudo-card">
+                        <div class="card">
+                            <h2>
+                                <i id="php" class="fa-brands fa-php"></i>
+                            </h2>
+                        </div>
+                        <p class="descricao-tecnologia">PHP</p>
+                    </div>
                 </div>
-                <div class="container-conteudo-card">
-                    <div class="card">
-                        <h2>
-                            <i id="css" class="fa-brands fa-css3-alt"></i>
-                        </h2>
+                <div class="cards-2">
+                    <div class="container-conteudo-card">
+                        <div class="card">
+                            <h2>
+                                <i id="java" class="fa-brands fa-java"></i>
+                            </h2>
+                        </div>
+                        <p class="descricao-tecnologia">JAVA</p>
                     </div>
-                    <p class="descricao-tecnologia">CSS</p>
-                </div>
-                <div class="container-conteudo-card">
-                    <div class="card">
-                        <h2>
-                            <i id="javascript" class="fa-brands fa-square-js"></i>
-                        </h2>
+                    <div class="container-conteudo-card">
+                        <div class="card">
+                            <h2>
+                                <i id="sql" class="fa-solid fa-database"></i>
+                            </h2>
+                        </div>
+                        <p class="descricao-tecnologia">SQL</p>
                     </div>
-                    <p class="descricao-tecnologia">JAVASCRIPT</p>
-                </div>
-                <div class="container-conteudo-card">
-                    <div class="card">
-                        <h2>
-                            <i id="php" class="fa-brands fa-php"></i>
-                        </h2>
+                    <div class="container-conteudo-card">
+                        <div class="card">
+                            <h2>
+                                <i id="mysql" class="fa-solid fa-database"></i>
+                            </h2>
+                        </div>
+                        <p class="descricao-tecnologia">MySQL</p>
                     </div>
-                    <p class="descricao-tecnologia">PHP</p>
-                </div>
-            </div>
-            <div class="cards-2">
-                <div class="container-conteudo-card">
-                    <div class="card">
-                        <h2>
-                            <i id="java" class="fa-brands fa-java"></i>
-                        </h2>
-                    </div>
-                    <p class="descricao-tecnologia">JAVA</p>
-                </div>
-                <div class="container-conteudo-card">
-                    <div class="card">
-                        <h2>
-                            <i id="sql" class="fa-solid fa-database"></i>
-                        </h2>
-                    </div>
-                    <p class="descricao-tecnologia">SQL</p>
-                </div>
-                <div class="container-conteudo-card">
-                    <div class="card">
-                        <h2>
-                            <i id="mysql" class="fa-solid fa-database"></i>
-                        </h2>
-                    </div>
-                    <p class="descricao-tecnologia">MySQL</p>
                 </div>
             </div>
         </section>
-        <section id="projetos">
+        <section id="projetos" data-anime="left">
             <div id="titulo-iframe">
                 <h1>Projetos</h1>
             </div>
             <div class="container-projetos">
-                
                 <div class="container-iframe">
                     <h3>Site Catalogo</h3>
                     <div class="tecnologias-usadas">
@@ -192,7 +206,7 @@
                     <div class="container-p">
                         <P>
                             Projeto com objetivo de ser um site onde temos acesso a informações de um determinado
-                            produto de forma rápida sem precisar ficar acessando Sistemas:
+                            produto de forma rápida sem precisar ficar acessando Sistemas.
                         </P>
                         <div class="links">
                             <a href="https://github.com/fabriciodeJs/Site_Catalogo" target="_blank"><button>Código</button></a>
@@ -214,7 +228,9 @@
                     </div>
                     <div class="container-p">
                         <P>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolor pariatur quo numquam, eligendi harum, aspernatur dicta sunt eaque, iusto quas ullam porro perferendis saepe quis culpa sapiente sit debitis.
+                            Site de Academia desenvolvido para um trabalho acadêmico onde teria que desenvolver
+                            um site da minha escolha de nicho e fazer com que ele tivesse alguma funcionalidade 
+                            com banco de dados MySql.
                         </P>
                         <div class="links">
                             <a href="https://github.com/fabriciodeJs/Site-Academia" target="_blank"><button>Código</button></a>
@@ -233,7 +249,7 @@
                     </div>
                     <div class="container-p">
                         <P>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolor pariatur quo numquam, eligendi harum, aspernatur dicta sunt eaque, iusto quas ullam porro perferendis saepe quis culpa sapiente sit debitis.
+                            Projeto desenvolvido para praticar uso de Tabelas em HTML.
                         </P>
                         <div class="links">
                             <a href="https://fabriciodejs.github.io/CLTzando/" target="_blank"><button>Site</button></a>
@@ -252,7 +268,7 @@
                     </div>
                     <div class="container-p">
                         <P>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolor pariatur quo numquam, eligendi harum, aspernatur dicta sunt eaque, iusto quas ullam porro perferendis saepe quis culpa sapiente sit debitis.
+                            Tela de login desenvolvida para praticar conhecimentos em CSS.
                         </P>
                         <div class="links">
                             <a href="https://fabriciodejs.github.io/Login/" target="_blank"><button>Site</button></a>
@@ -272,7 +288,7 @@
                     </div>
                     <div class="container-p">
                         <P>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolor pariatur quo numquam, eligendi harum, aspernatur dicta sunt eaque, iusto quas ullam porro perferendis saepe quis culpa sapiente sit debitis.
+                            Projeto Desenvolvido para praticar conhecimentos em JavaScript.
                         </P>
                         <div class="links">
                             <a href="https://fabriciodejs.github.io/To-do_List/" target="_blank"><button>Site</button></a>
@@ -292,7 +308,7 @@
                     </div>
                     <div class="container-p">
                         <P>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolor pariatur quo numquam, eligendi harum, aspernatur dicta sunt eaque, iusto quas ullam porro perferendis saepe quis culpa sapiente sit debitis.
+                            Projeto Desenvolvido para praticar conhecimentos em JavaScript e eventos de clique.
                         </P>
                         <div class="links">
                             <a href="https://fabriciodejs.github.io/Calculo-de-IMC/" target="_blank"><button>Site</button></a>
@@ -311,7 +327,9 @@
                     </div>
                     <div class="container-p">
                         <P>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolor pariatur quo numquam, eligendi harum, aspernatur dicta sunt eaque, iusto quas ullam porro perferendis saepe quis culpa sapiente sit debitis.
+                            Projeto desenvolvido pelo Gustavo Guanabara do <a href="https://www.youtube.com/@CursoemVideo" target="_blank">
+                                <b>Curso em video</b></a> 
+                            para o curso de HTML e CSS
                         </P>
                         <div class="links">
                             <a href="https://fabriciodejs.github.io/Historia-do-Android/" target="_blank"><button>Site</button></a>
@@ -330,7 +348,9 @@
                     </div>
                     <div class="container-p">
                         <P>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolor pariatur quo numquam, eligendi harum, aspernatur dicta sunt eaque, iusto quas ullam porro perferendis saepe quis culpa sapiente sit debitis.
+                            Projeto desenvolvido pelo Gustavo Guanabara do <a href="https://www.youtube.com/@CursoemVideo" target="_blank">
+                                <b>Curso em video</b></a> 
+                            para o curso de HTML e CSS
                         </P>
                         <div id="ultimo-botao" class="links">
                             <a href="https://fabriciodejs.github.io/Projeto-Cordel/" target="_blank"><button>Site</button></a>
@@ -342,7 +362,7 @@
         </section>
     </main>
     <hr>
-    <footer>
+    <footer id="footer">
         <p>
             Desenvolvido por <a href="https://www.linkedin.com/in/fabr%C3%ADcio-de-jesus-868b5122a/" >Fabricio de Jesus</a>
         </p>
@@ -363,7 +383,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/546ab0e97a.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="assets/javaScript/script.js"></script>
 </body>
 
 </html>

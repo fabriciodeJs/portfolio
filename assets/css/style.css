@@ -16,6 +16,10 @@
     color: var(--color-primary);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -54,6 +58,25 @@ header {
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
     font-weight: bolder;
+}
+
+.logo p {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        escrevendo 3.5s steps(40, end)
+}
+
+@keyframes escrevendo {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 #container-cabecalho #logo span {
@@ -99,14 +122,33 @@ header {
 
 /***************************************************/
 
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime='down'] {
+    transform: translate3d(0, -100%, 0);
+}
+
+[data-anime='up'] {
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anime].animar {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
 main {
     padding: 90px 0;
     width: 100%;
     background-color: var(--color-background);
-    
+
 }
 
 main #container-apresentacao {
+    animation: inicializar 1s forwards;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,10 +158,11 @@ main #container-apresentacao {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    
+
 }
 
 main #container-apresentacao #container-conteudo {
+    animation: inicializar 3s forwards;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +170,18 @@ main #container-apresentacao #container-conteudo {
     height: 100%;
     padding: 80px;
     backdrop-filter: blur(4px);
+}
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 main #container-apresentacao #container-conteudo #conteudo {
@@ -172,15 +227,18 @@ main #container-apresentacao #container-conteudo #conteudo {
     cursor: pointer;
 }
 
-#linkedin  {
+#linkedin {
     color: #0A66C2;
 }
+
 #github {
     color: #BABBBD;
 }
+
 #whatsapp {
     color: #00E676;
 }
+
 #email {
     color: #F04244;
 }
@@ -218,6 +276,8 @@ a {
 }
 
 /***************************************************/
+
+
 
 #sobre {
     width: 100%;
@@ -270,6 +330,10 @@ a {
 }
 
 /********************************************/
+
+[data-anime='left'] {
+    transform: translate3d(-100%, 0, 0);
+}
 
 #tecnologias {
     background-color: var(--color-background);
@@ -393,6 +457,10 @@ a {
 }
 
 /*************************************/
+
+[data-anime='right'] {
+    transform: translate3d(50px, 0, 0);
+}
 
 #projetos {
     width: 100%;
