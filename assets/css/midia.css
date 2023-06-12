@@ -207,3 +207,40 @@
 
     }
 }
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+    #container-cabecalho {
+        transition: 2s;
+        padding: 10px;
+    }
+    
+    #sobre {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #sobre-dados {
+        width: 90%;
+    }
+
+    #titulo-tecnologia {
+        font-size: 2em;
+    }
+
+    .cards, .cards-2 {
+        grid-template-columns: auto auto;
+    }
+
+    .descricao-tecnologia {
+        font-size: 1.2em;
+    }
+
+    #titulo-iframe {
+        font-size: 2em;
+    }
+
+    .container-projetos {
+        grid-template-columns: auto;
+    }
+   
+} 

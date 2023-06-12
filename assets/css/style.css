@@ -40,6 +40,7 @@ header {
     backdrop-filter: blur(10px);
     padding: 0 120px;
     box-shadow: 0px 0px 10px rgba(54, 191, 177, 0.428);
+    transition: 2s;
 }
 
 #logo {
@@ -50,7 +51,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 50px;
-    font-size: 1.3em;
+    font-size: 1em;
     border: 2px solid var(--color-third);
     padding: 0 20px;
     border-top-left-radius: 50px;
@@ -81,7 +82,7 @@ header {
 
 #container-cabecalho #logo span {
     padding: 0 10px;
-    font-size: 1.6em;
+    font-size: 1.3em;
 }
 
 #botao-menu-mobile {
@@ -97,7 +98,7 @@ header {
     position: relative;
     cursor: pointer;
     margin-left: 30px;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #container-cabecalho nav ul li::after {
@@ -209,11 +210,11 @@ main #container-apresentacao #container-conteudo #conteudo {
 }
 
 #container-conteudo #conteudo h2 {
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 #container-conteudo #conteudo p {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .redes-socias {
@@ -293,7 +294,7 @@ a {
 }
 
 #sobre-dados {
-    width: 60%;
+    max-width: 800px;
 }
 
 .container-sobre {
@@ -419,8 +420,8 @@ a {
 }
 
 .card {
-    width: 190px;
-    height: 254px;
+    width: 150px;
+    height: 204px;
     background-color: #07182E;
     position: relative;
     display: flex;
@@ -434,7 +435,7 @@ a {
 .card h2 {
     z-index: 1;
     color: white;
-    font-size: 9em;
+    font-size: 6em;
 }
 
 .card::before {
@@ -480,7 +481,7 @@ a {
     width: 100%;
     text-align: center;
     padding: 50px 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .container-projetos {
@@ -491,7 +492,7 @@ a {
 
 .tecnologias-usadas {
     font-size: 1.8em;
-    width: 500px;
+    width: 450px;
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
@@ -511,7 +512,7 @@ a {
 }
 
 .container-iframe .container-p {
-    width: 500px;
+    width: 400px;
 }
 
 .container-iframe p {
@@ -522,8 +523,8 @@ a {
 }
 
 iframe {
-    height: 550px;
-    width: 500px;
+    height: 500px;
+    width: 400px;
 }
 
 .links {
